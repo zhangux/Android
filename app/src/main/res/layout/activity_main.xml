@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dq_min"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/vp_rg_rb1"
+            style="@style/MainRgbt"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_more_btn"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/vp_rg_rb2"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_classify_btn"
+            android:text="类别" />
+
+        <RadioButton
+            android:id="@+id/vp_rg_rb3"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_posters_btn"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/vp_rg_rb4"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_my_btn"
+            android:text="我" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Anim_fade" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/leftin</item>
+        <item name="android:activityOpenExitAnimation">@anim/leftout</item>
+        <item name="android:activityCloseEnterAnimation">@anim/leftin</item>
+        <item name="android:activityCloseExitAnimation">@anim/leftout</item>
+    </style>
+
+    <style name="MainRgbt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@drawable/tabitem_text_color_selector</item>
+    </style>
+    <!--由于Wear设备滑动事件与底图事件冲突，首先禁用系统滑动。-->
+    <!--<style name="WearAppTheme" parent="@android:style/Theme.Translucent.NoTitleBar">-->
+        <!--<item name="android:windowSwipeToDismiss">false</item>-->
+    <!--</style>-->
+</resources>

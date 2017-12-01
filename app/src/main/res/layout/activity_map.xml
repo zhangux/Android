@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.baidu.mapapi.map.MapView-->
+    <!--android:id="@+id/bmapView"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:clickable="true" />-->
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/mTexturemap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></com.baidu.mapapi.map.TextureMapView>
+
+    <RadioGroup
+        android:id="@+id/rg_map_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rg_normal"
+            style="@style/MainRgbt"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_more_btn"
+            android:text="普通" />
+
+        <RadioButton
+            android:id="@+id/rg_satellite"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_classify_btn"
+            android:text="卫星" />
+
+        <RadioButton
+            android:id="@+id/rg_withe"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_my_btn"
+            android:text="空白" />
+
+        <CheckBox
+            android:id="@+id/rg_traffic"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_posters_btn"
+            android:text="交通" />
+
+        <CheckBox
+            android:id="@+id/rg_heat"
+            style="@style/MainRgbt"
+            android:drawableTop="@drawable/tab_my_btn"
+            android:text="热力" />
+    </RadioGroup>
+</LinearLayout>
